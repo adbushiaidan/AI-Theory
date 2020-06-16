@@ -1,6 +1,6 @@
 # AI-Theory
 
-##Deep Learning
+##Deep Learning##
 
 • Shallow
 • Gaussian mixed model (GMM), max entropy, support vector machine (SVM),
@@ -15,7 +15,8 @@
 • Why go deep?
 
 
-##What AI/ML Can Do
+##What AI/ML Can Do##
+
 • Learn some hidden patterns
 • If there exists one.
 • Given sufficiently many training data.
@@ -26,14 +27,14 @@
 • Finding suitable representations.
 • Current 3rd-wave techniques usually lack of theoretical supports
 
-##What AI/ML Can NOT Do
+##What AI/ML Can NOT Do##
 • Can NOT generate new information out of nothing.
 • Can NOT learn useful things without a prior hypothesis (bias).
 • No bias, no learning.
 • Can NOT arbitrarily increase SNR (signal to noise ratio).
 • Garbages in, garbages out.
 
-#some test for AI theory apllication
+##some test for AI theory apllication##
 •A1 Search
 •Convolutional Neural Networks
 •DFS and BFS
