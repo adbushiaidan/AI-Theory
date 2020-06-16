@@ -38,14 +38,15 @@
 
 ## some test for AI theory Apllication  
 
--A1 Search  
+- A1 Search  
 
--Convolutional Neural Networks 
--DFS and BFS  
--Informed Search  
--London bike sharing EDA  
--Recurrent Neural Network  
--Simple NN Algorithm Search  
--Tutorial-machine translation with AI/ML applied  
+- Convolutional Neural Networks
+
+- DFS and BFS  
+- Informed Search  
+- London bike sharing EDA  
+- Recurrent Neural Network  
+- Simple NN Algorithm Search  
+- Tutorial-machine translation with AI/ML applied  
 
 
