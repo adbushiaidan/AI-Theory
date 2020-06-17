@@ -5,7 +5,6 @@
    In this tutorial, we'll build a simple Chinese-English translation model.
 
 ## Seq2Seq model
-
    A simple Seq2Seq model consists of three parts, Encoder-LSTM, Decoder-LSTM, and Context.The input sequence is ABC, and Encoder-LSTM processes the input sequence and returns the hidden state of the entire input sequence in the last neuron, also known as the context (C).Decoder-LSTM then predicts the next character of the target sequence step by step based on the hidden state.The final output sequence wxyz.It is worth mentioning that the author Sutskever designed a specific Seq2Seq model based on his specific tasks.The input sequence is processed in reverse order, which enables the model to process long sentences and improves the accuracy.  
 
 ## 1. Data preprocessing
@@ -36,9 +35,9 @@
 ## 4. Train the model
 
 ## 5. Modifying the Model for Predictions
-  While training, we know the actual inputs to the decoder for all the output words in the sequence. The input to the decoder and output from the decoder is known and the model is trained on the basis of these inputs and outputs.  
+   While training, we know the actual inputs to the decoder for all the output words in the sequence. The input to the decoder and output from the decoder is known and the model is trained on the basis of these inputs and outputs.  
 
-  However, during predictions the next word will be predicted on the basis of the previous word, which in turn is also predicted in the previous time-step. Now you will understand the purpose of sos and  eos tokens. While making actual predictions, the full output sequence is not available, in fact that is what we have to predict. During prediction the only word available to us is sos since all the output sentences start with sos.  
+   However, during predictions the next word will be predicted on the basis of the previous word, which in turn is also predicted in the previous time-step. Now you will understand the purpose of sos and  eos tokens. While making actual predictions, the full output sequence is not available, in fact that is what we have to predict. During prediction the only word available to us is sos since all the output sentences start with sos.  
 
 ## 6. Make predictions
 - In this step, you will see how to make predictions using English sentences as inputs.
@@ -51,4 +50,4 @@
 
 - Next, we execute a while loop.
 
-  Inside the loop, in the first iteration, the decoder_model predicts the output and the hidden and cell states, using the hidden and cell state of the encoder, and the input token, i.e. sos. The index of the predicted word is stored in sampled_token_index. The predicted index is then appended to the outputs list. The index of the predicted word is stored in the target_seq variable. In the next loop cycle, the updated hidden and cell states, along with the index of the previously predicted word, are used to make new predictions. The loop continues until the maximum output sequence length is achieved or the eos token is encountered.
+    Inside the loop, in the first iteration, the decoder_model predicts the output and the hidden and cell states, using the hidden and cell state of the encoder, and the input token, i.e. sos. The index of the predicted word is stored in sampled_token_index. The predicted index is then appended to the outputs list. The index of the predicted word is stored in the target_seq variable. In the next loop cycle, the updated hidden and cell states, along with the index of the previously predicted word, are used to make new predictions. The loop continues until the maximum output sequence length is achieved or the eos token is encountered.
