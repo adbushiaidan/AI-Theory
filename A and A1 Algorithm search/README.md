@@ -17,13 +17,13 @@
 
 
 ## Convolutional vs fully connected layer  
-    - In convolutional layer the same kernel is used for every output neuron, this way we share parameters of the network and train a better model;
+- In convolutional layer the same kernel is used for every output neuron, this way we share parameters of the network and train a better model.  
 
-    - 300x300 input, 300x300 output, 5x5 kernel – 26 parameters in convolutional layer and 8.1×10B parameters in fully connected layer (each output is a perceptron);  
+- 300x300 input, 300x300 output, 5x5 kernel – 26 parameters in convolutional layer and 8.1×10B parameters in fully connected layer (each output is a perceptron).  
 
-   - Convolutional layer can be viewed as a special case of a fully connected layer when all the weights outside the local receptive field of each neuron.  
+- Convolutional layer can be viewed as a special case of a fully connected layer when all the weights outside the local receptive field of each neuron.  
    
-   - Equal 0 and kernel parameters are shared between neurons.  
+- Equal 0 and kernel parameters are shared between neurons.  
 
 
 ## One convolutional layer is not enough
