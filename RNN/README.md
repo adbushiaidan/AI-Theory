@@ -1,9 +1,9 @@
 
 # Recurrent Neural Network (RNN)
 
-𝑥 - input
-𝑦 - output (prediction)
-ℎ - hidden state
+𝑥 - input  
+𝑦 - output (prediction)  
+ℎ - hidden state  
 
 ## LSTM
 
@@ -25,6 +25,6 @@
    - Machine translation.
 
 ## Input and output …
-    - are NOT synchronized.
-    - may have different length.
-    - may have different order.
+   - are NOT synchronized.
+   - may have different length.
+   - may have different order.
