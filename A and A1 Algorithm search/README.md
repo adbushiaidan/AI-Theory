@@ -27,6 +27,6 @@
 
 
 ## One convolutional layer is not enough
-    - It looks like we need to stack a lot of convolutional layers.
+- It looks like we need to stack a lot of convolutional layers.
 
-    - To be able to identify objects as big as the input image 300x300 we will need 150 convolutional layers.
+- To be able to identify objects as big as the input image 300x300 we will need 150 convolutional layers.
